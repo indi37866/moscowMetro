@@ -58,8 +58,6 @@ object MetroRepository {
         Station(43, "Зюзино", turquoiseLine, 29),
 
         // ЗЕЛЕНАЯ ВЕТКА(D)
-
-        Station(44, "Апрелевка", greenLine_D, 1),
         Station(44, "Апрелевка", greenLine_D, 1),
         Station(45, "Победа", greenLine_D, 2),
         Station(46, "Крёкшино", greenLine_D, 3),
