@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MoscowMetro</string>
+    <string name="distance_calculator_text">Калькулятор расстояния</string>
+    <string name="hint_enter_text">Введите станцию</string>
+    <string name="from_text">Откуда</string>
+    <string name="to_text">Куда</string>
+    <string name="calculate_text">Посчитать</string>
 </resources>

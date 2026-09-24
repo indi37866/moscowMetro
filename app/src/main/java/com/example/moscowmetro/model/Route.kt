@@ -31,7 +31,7 @@ fun findRoute(startStation: Station, endStation: Station, allStation: List<Stati
     }
 }
 
-fun calculateSameLineRoute(start: Station, end: Station, all: List<Station>): Route {
+private fun calculateSameLineRoute(start: Station, end: Station, all: List<Station>): Route {
     if (start.line.isCircle == false) {
         val minId = minOf(start.id, end.id)
         val maxId = maxOf(start.id, end.id)
@@ -46,7 +46,7 @@ fun calculateSameLineRoute(start: Station, end: Station, all: List<Station>): Ro
 }
 
 
-fun calculateCircleLine(start: Station, end: Station, all: List<Station>): Route {
+private fun calculateCircleLine(start: Station, end: Station, all: List<Station>): Route {
     val forwardDistance = ((end.order - start.order) + all.count()) % all.count() // по часовой
     val backwardDistance = ((start.order - end.order) + all.count()) % all.count() //  проив часовой
     val isForward = forwardDistance < backwardDistance
