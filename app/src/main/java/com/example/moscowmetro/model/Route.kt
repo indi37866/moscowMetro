@@ -32,10 +32,10 @@ fun findRoute(startStation: Station, endStation: Station, allStation: List<Stati
 }
 
 private fun calculateSameLineRoute(start: Station, end: Station, all: List<Station>): Route {
-    if (start.line.isCircle == false) {
+    if (!start.line.isCircle) {
         val minId = minOf(start.id, end.id)
         val maxId = maxOf(start.id, end.id)
-        val waypoints = all.filter { minId < it.id && it.id < maxId }
+        val waypoints = all.filter { it.id in (minId + 1)..<maxId }
         val path = waypoints.toMutableList()
         path.add(0, start)
         path.add(end)

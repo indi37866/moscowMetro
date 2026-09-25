@@ -5,4 +5,9 @@
     <string name="from_text">Откуда</string>
     <string name="to_text">Куда</string>
     <string name="calculate_text">Посчитать</string>
+
+    <string name="result_time_text">Итоговое время</string>
+    <string name="result_time">24 минуты</string>
+    <string name="station_count_text">Количество пройденных станций</string>
+    <string name="station_count">6</string>
 </resources>
