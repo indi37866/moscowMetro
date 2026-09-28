@@ -25,7 +25,7 @@ object MetroRepository {
         Station(13, "Пыхтино", yellowLineA, 13),
         Station(14, "Аэропорт Внуково", yellowLineA, 14),
 
-
+        /*
         // БИРЮЗОВАЯ ВЕТКА
         Station(15, "Каховская", turquoiseLine, 1),
         Station(16, "Варшавская", turquoiseLine, 2),
@@ -95,5 +95,6 @@ object MetroRepository {
         Station(78, "Кучино", greenLine_D, 35),
         Station(79, "Ольгино", greenLine_D, 36),
         Station(80, "Железнодорожная", greenLine_D, 37),
+         */
         )
 }
