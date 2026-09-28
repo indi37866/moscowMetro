@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#000000">
 
     <TextView
@@ -26,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvResultTimeText"
         app:layout_constraintEnd_toEndOf="@id/tvResultTimeText"
         app:layout_constraintStart_toStartOf="@id/tvResultTimeText"
-        android:text="@string/result_time"
+        tools:text="24 минуты"
         android:textSize="33sp"
         android:textColor="#FF0000"
         android:textStyle="italic"
@@ -54,7 +55,6 @@
         app:layout_constraintTop_toBottomOf="@id/tvStationCountText"
         app:layout_constraintEnd_toEndOf="@id/tvResultTimeText"
         app:layout_constraintStart_toStartOf="@id/tvResultTimeText"
-        android:text="@string/station_count"
         android:textSize="33sp"
         android:textColor="#FF0000"
         android:textStyle="italic"

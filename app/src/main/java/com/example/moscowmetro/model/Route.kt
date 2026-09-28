@@ -5,19 +5,19 @@ import com.example.moscowmetro.MetroRepository
 // ВРЕМЯ ОЖИДАНИЕ ПОЕЗДА (В МИНУТАХ)
 const val AverageWaitTime = 2
 // ВРЕМЯ ДО СЛЕДУЮЩЕЙ СТАНЦИИ
-const val AverageWayTime = 2.5
+const val AverageWayTime = 3
 
 data class Route(
     val startStation: Station,       // Откуда выехали
     val endStation: Station,         // Куда приехали
     val path: MutableList<Station>,
-    val totalTimeMinutes: Double,
+    val totalTimeMinutes: Int,
     val transfersCount: Int = 0
 )
 
 fun findRoute(startStation: Station, endStation: Station, allStation: List<Station>): Route {
     if (startStation.id == endStation.id) {
-        return Route(startStation, endStation, mutableListOf(startStation), 0.0)
+        return Route(startStation, endStation, mutableListOf(startStation), 0)
     }
     return when {
         startStation.line == endStation.line -> {
@@ -39,7 +39,7 @@ private fun calculateSameLineRoute(start: Station, end: Station, all: List<Stati
         val path = waypoints.toMutableList()
         path.add(0, start)
         path.add(end)
-        val timeInRoad = (waypoints.count() * 2.5) + 2.5
+        val timeInRoad = ((path.count() - 1) * AverageWayTime)
         val totalTime = timeInRoad + AverageWaitTime
         return Route(start, end, path, totalTime)
     } else return calculateCircleLine(start, end, all)
