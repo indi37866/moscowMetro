@@ -7,14 +7,15 @@
     <string name="calculate_text">Посчитать</string>
 
     <string name="result_time_text">Итоговое время</string>
-
     <plurals name="minutes">
         <item quantity="one">%d минута</item>
         <item quantity="few">%d минуты</item>
         <item quantity="many">%d минут</item>
         <item quantity="other">%d минуты</item>
     </plurals>
-
     <string name="station_count_text">Количество пройденных станций</string>
 
+    <string name="not_found_hint">Станция не найдена</string>
+    <string name="doubled_station_hint">Станции должны отличаться</string>
+    <string name="different_lines_hint">Функция в разработке</string>
 </resources>

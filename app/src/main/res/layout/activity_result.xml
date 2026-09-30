@@ -4,8 +4,20 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#000000">
+    android:background="#000000"
+    android:fitsSystemWindows="true">
 
+    <ImageButton
+        android:id="@+id/btnClose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_rect"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        />
     <TextView
         android:id="@+id/tvResultTimeText"
         android:layout_width="wrap_content"
@@ -13,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="50dp"
+        android:layout_margin="90dp"
         android:text="@string/result_time_text"
         android:textSize="33sp"
         android:textColor="#FCFF00"
@@ -27,12 +39,11 @@
         app:layout_constraintTop_toBottomOf="@id/tvResultTimeText"
         app:layout_constraintEnd_toEndOf="@id/tvResultTimeText"
         app:layout_constraintStart_toStartOf="@id/tvResultTimeText"
-        tools:text="24 минуты"
         android:textSize="33sp"
         android:textColor="#FF0000"
         android:textStyle="italic"
         android:gravity="center"
-        android:background="@drawable/bg_rounded_text"
+        android:background="@drawable/bg_rounded"
         />
 
     <TextView
@@ -59,6 +70,6 @@
         android:textColor="#FF0000"
         android:textStyle="italic"
         android:gravity="center"
-        android:background="@drawable/bg_rounded_text"
+        android:background="@drawable/bg_rounded"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
